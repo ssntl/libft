@@ -1,3 +1,7 @@
+// TODO ALL:
+// check header format from remote (ft_split)
+
+
 // TODO: check for relinking, add PHONY again, double check 'all'
 
 NAME = libft.a
