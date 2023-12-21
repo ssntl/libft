@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:11:09 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/22 00:12:40 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/22 00:37:39 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,28 +36,60 @@ size_t	count_words(char const *s, char c)
 	return (words);
 }
 
-char	**ft_split(char const *s, char c)
+int	safe_malloc(char **something, int pos, size_t buffer)
 {
-	int	len;
 	int	i;
 
-	len = ft_strlen(s);
 	i = 0;
-	while (i < len)
+	something[pos] = malloc(buffer);
+	if (NULL == something[pos])
 	{
-		
+		while (i < pos)
+			free(something[i++]);
+		free(something);
+		return (1);
 	}
-
-//malloc the words by passing through string again and counting len of substr
-
-//fill the new substrings with the words
-//array ends with NULL pointer
+	return (0);
 }
 
-
-int	main()
+int	fill(char **something, char const *s, char c)
 {
-	char *s = "Hello, World! "
-	**ft_split(*s, ' ');
+	size_t	len;
+	int		i;
+
+	i = 0;
+	while (*s)
+	{
+		len = 0;
+		while (*s == c && *s)
+			s++;
+		while (*s != c && *s)
+		{
+			len++;
+			s++;
+		}
+		if (len)
+		{
+			if (safe_malloc(something, i, len + 1))
+				return (1);
+			ft_strlcpy(something[i], s - len, len + 1);
+		}
+		i++;
+	}
 	return (0);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	size_t	words;
+	char	**something;
+
+	words = count_words(*s, c);
+	something = malloc(sizeof(char *) * (words + 1));
+	if ((NULL == s) || (NULL == something))
+		return (NULL);
+	something[words] = NULL;
+	if (fill(something, s, c))
+		return (NULL);
+	return (something);
 }
