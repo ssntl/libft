@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:22:51 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 19:28:50 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/21 19:37:43 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-
+	
 }

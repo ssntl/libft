@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:24:36 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 19:26:28 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/21 19:55:09 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,15 @@
 
 void	ft_putstr_fd(char *s, int fd)
 {
+	int	i;
 
+	if (s != NULL)
+	{
+		i = 0;
+		while (s[i])
+		{
+			ft_putchar_fd(s[i], fd);
+			i++;
+		}
+	}
 }

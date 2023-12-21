@@ -6,12 +6,9 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:57 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 19:29:59 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/21 20:25:52 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// TODO: check first lines and endif at bottom
-// add headers where?
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -43,9 +40,6 @@ char		*ft_strnstr(const char *big, const char *little, size_t len);
 int			ft_atoi(const char *str);
 void		*calloc(size_t nmemb, size_t size);
 char		*ft_strdup(const char *str);
-
-// not in libc
-
 char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *s1, char const *set);
