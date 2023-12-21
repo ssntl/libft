@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:57 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 17:41:13 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/21 19:29:59 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,8 +41,6 @@ void		*ft_memchr(const void *s, int c, size_t n);
 int			ft_memcmp(const void *s1, const void *s2, size_t n);
 char		*ft_strnstr(const char *big, const char *little, size_t len);
 int			ft_atoi(const char *str);
-
-// malloc functions:
 void		*calloc(size_t nmemb, size_t size);
 char		*ft_strdup(const char *str);
 

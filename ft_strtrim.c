@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/19 09:11:09 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 19:28:24 by bsaager          ###   ########.fr       */
+/*   Created: 2023/12/21 19:22:51 by bsaager           #+#    #+#             */
+/*   Updated: 2023/12/21 19:28:50 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 
 }

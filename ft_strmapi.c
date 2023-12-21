@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/19 09:11:09 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 19:28:24 by bsaager          ###   ########.fr       */
+/*   Created: 2023/12/21 19:23:50 by bsaager           #+#    #+#             */
+/*   Updated: 2023/12/21 19:27:41 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 
 }

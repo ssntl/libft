@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/19 09:11:09 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 19:28:24 by bsaager          ###   ########.fr       */
+/*   Created: 2023/12/21 19:24:04 by bsaager           #+#    #+#             */
+/*   Updated: 2023/12/21 19:27:12 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_split(char const *s, char c)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
 
 }
