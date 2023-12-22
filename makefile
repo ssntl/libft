@@ -6,7 +6,7 @@
 #    By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/21 14:44:19 by bsaager           #+#    #+#              #
-#    Updated: 2023/12/22 01:04:30 by bsaager          ###   ########.fr        #
+#    Updated: 2023/12/22 18:33:24 by bsaager          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -25,7 +25,7 @@ SRC = 	ft_atoi.c \
 		ft_memmove.c \
 		ft_memset.c \
 		ft_putchar_fd.c \
-		ft_putendl_fc.c \
+		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 		ft_split.c \
 		ft_strchr.c \
@@ -42,7 +42,7 @@ SRC = 	ft_atoi.c \
 		ft_strtrim.c \
 		ft_substr.c \
 		ft_tolower.c \
-		ft_toupper.c 
+		ft_toupper.c
 OBJS = $(SRC: .c=.o)
 FLAGS = -Wall -Wextra -Werror
 CC = gcc

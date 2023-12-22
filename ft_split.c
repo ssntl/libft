@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:11:09 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/22 00:37:39 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/22 18:33:54 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ char	**ft_split(char const *s, char c)
 	size_t	words;
 	char	**something;
 
-	words = count_words(*s, c);
+	words = count_words(s, c);
 	something = malloc(sizeof(char *) * (words + 1));
 	if ((NULL == s) || (NULL == something))
 		return (NULL);
