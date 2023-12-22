@@ -6,23 +6,23 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:23:35 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 19:51:49 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/22 20:01:53 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	size(int i)
+size_t	ft_size(int i)
 {
-	int	j;
+	size_t	j;
 
 	j = 0;
-	if (i == 0)
-		return (1);
+	if (i <= 0)
+		j++;
 	while (i)
 	{
 		i /= 10;
-		i++;
+		j++;
 	}
 	return (j);
 }
@@ -30,25 +30,26 @@ size_t	size(int i)
 char	*ft_itoa(int n)
 {
 	char	*str;
-	size_t	i;
-	long	j;
+	size_t	len;
+	long	num;
 
-	j = n;
-	i = size(n);
-	if (n < 0)
-		j *= -1;
-	str = (char *)malloc(i + 1);
-	if (!str)
+	num = n;
+	len = ft_size(num);
+	str = (char *)malloc(len + 1);
+	if (str == NULL)
 		return (NULL);
-	*(str + i--) = '\0';
-	while (j > 0)
+	str[len] = '\0';
+	if (num == 0)
+		str[0] = '0';
+	else if (num < 0)
 	{
-		*(str + i--) = j % 10 + '0';
-		j /= 10;
+		str[0] = '-';
+		num = -num;
 	}
-	if (i == 0 && str[1] == '\0')
-		*(str + i) = '0';
-	else if (i == 0 && str[1])
-		*(str + i) = '-';
+	while (num > 0)
+	{
+		str[--len] = (num % 10) + '0';
+		num /= 10;
+	}
 	return (str);
 }

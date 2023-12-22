@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:36 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 17:42:14 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/22 20:18:07 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	j;
 
 	i = 0;
+	if (!*little || !len)
+		return ((char *)big);
 	while (i < len && big[i] != '\0')
 	{
 		j = 0;

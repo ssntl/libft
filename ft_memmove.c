@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:30:53 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 16:42:05 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/22 20:21:16 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	s = (char *)src;
 	d = (char *)dest;
 	i = 0;
+	if (dest == NULL && src == NULL)
+		return (dest);
 	if (d > s)
 		while (n-- > 0)
 			d[n] = s[n];
