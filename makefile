@@ -6,7 +6,7 @@
 #    By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/21 14:44:19 by bsaager           #+#    #+#              #
-#    Updated: 2023/12/22 18:38:04 by bsaager          ###   ########.fr        #
+#    Updated: 2023/12/22 18:44:49 by bsaager          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,13 +42,18 @@ SRC = 	ft_atoi.c \
 		ft_strtrim.c \
 		ft_substr.c \
 		ft_tolower.c \
-		ft_toupper.c
+		ft_toupper.c \
+
 OBJS = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
 CC = gcc
 HEADER = libft.h
 
 all: $(NAME)
+
+%.o: %.c
+	$(CC) $(FLAGS) -c $^ -o $@
+
 $(NAME):
 	$(CC) $(FLAGS) -c $(SRC)
 	ar rc $(NAME) $(OBJS)
@@ -57,7 +62,7 @@ $(NAME):
 clean:
 	rm -rf $(OBJS)
 fclean: clean
-	rm -f $(NAME)
+	rm -rf $(NAME)
 re: fclean all
 
 .PHONY: all, clean, fclean, re
