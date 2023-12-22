@@ -6,15 +6,15 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:29:18 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 16:14:40 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/22 19:07:35 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	bzero(void *s, size_t len)
+void	ft_bzero(void *s, size_t len)
 {
-	ft_memset(s, 0, len);
+	ft_memset(s, '\0', len);
 }
 /*
 	void *s: A pointer to the memory area where zeroing will occur.

@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/21 14:44:19 by bsaager           #+#    #+#              #
-#    Updated: 2023/12/22 18:44:49 by bsaager          ###   ########.fr        #
+#    Updated: 2023/12/22 19:05:08 by bsaager          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,11 +22,14 @@ SRC = 	ft_atoi.c \
 		ft_itoa.c \
 		ft_memchr.c \
 		ft_memcmp.c \
+		ft_memcpy.c \
 		ft_memmove.c \
 		ft_memset.c \
 		ft_putchar_fd.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
+		ft_putstr_fd.c \
+		ft_putendl_fd.c \
 		ft_split.c \
 		ft_strchr.c \
 		ft_strdup.c \

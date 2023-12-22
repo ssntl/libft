@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:57 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/22 18:36:01 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/22 19:06:26 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ int			ft_isascii(int c);
 int			ft_isprint(int c);
 size_t		ft_strlen(const char *s);
 void		*ft_memset(void *s, int c, size_t len);
-void		ft_bzero(void *s, size_t n);
+void		ft_bzero(void *s, size_t len);
 void		*ft_memcpy(void *dest, const void *src, size_t n);
 void		*ft_memmove(void *dest, const void *src, size_t n);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
