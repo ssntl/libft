@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:30:53 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/22 20:21:16 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 20:07:36 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,3 +44,24 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*
+#include <stdio.h>
+#include <string.h>
+
+int	main(void)
+{
+	char	src[] = "Hello, World!";
+	char	dest[20];
+
+	ft_memmove(dest, src, strlen(src) + 1);
+	printf("Copied string using ft_memmove: %s\n", dest);
+	char	dest2[20];
+	memmove(dest2, src, strlen(src) + 1);
+	printf("Copied string using memmove: %s\n", dest2);
+	if (strcmp(dest, dest2) == 0)
+		printf("Both strings are identical.\n");
+	else
+		printf("Strings are different.\n");
+	return (0);
+}
+*/

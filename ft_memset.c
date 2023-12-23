@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:30:57 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 17:44:43 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 20:10:40 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,23 @@ void	*ft_memset(void *s, int c, size_t len)
 		*(ptr++) = (unsigned char)c;
 	return (s);
 }
+/*
+#include <stdio.h>
+#include <string.h> // Include for the original memset function
+
+int	main(void)
+{
+	char	str[20];
+
+	ft_memset(str, 'A', 10);
+	printf("String after using ft_memset: %s\n", str);
+	char	str2[20];
+	memset(str2, 'A', 10);
+	printf("String after using memset: %s\n", str2);
+	if (strcmp(str, str2) == 0)
+		printf("Both strings are identical.\n");
+	else
+		printf("Strings are different.\n");
+	return (0);
+}
+*/

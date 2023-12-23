@@ -6,7 +6,7 @@
 #    By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/21 14:44:19 by bsaager           #+#    #+#              #
-#    Updated: 2023/12/23 17:57:10 by bsaager          ###   ########.fr        #
+#    Updated: 2023/12/23 19:40:02 by bsaager          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -53,13 +53,12 @@ HEADER = libft.h
 
 all: $(NAME)
 
-$(NAME): $(SRC)
-	$(CC) $(FLAGS) -c $(SRC)
+$(NAME): $(OBJS)
 	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
 
 %.o: %.c
-	$(CC) $(FLAGS) -c $^ -o $@
+	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
 	rm -rf $(OBJS)

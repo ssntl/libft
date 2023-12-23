@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:30:50 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 16:46:01 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 20:04:31 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,26 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+#include "libft.h"
+
+int main()
+{
+	char	src[] = "Hello, World!";
+	char	dest[20];
+
+	ft_memcpy(dest, src, strlen(src) + 1);
+	printf("Copied string using ft_memcpy: %s\n", dest);
+	char	dest2[20];
+	memcpy(dest2, src, strlen(src) + 1);
+	printf("Copied string using memcpy: %s\n", dest2);
+	if (strcmp(dest, dest2) == 0)
+		printf("Both strings are identical.\n");
+	else
+		printf("Strings are different.\n");
+	return (0);
+}
+*/

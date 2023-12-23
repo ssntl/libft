@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:30:47 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/23 18:51:23 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 20:01:06 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,6 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 #include <stdio.h>
 #include <string.h>
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n);
 
 int	main()
 {
