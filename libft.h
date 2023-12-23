@@ -6,14 +6,13 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:57 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/22 19:06:26 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 18:03:16 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
 

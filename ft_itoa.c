@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:23:35 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/23 17:32:36 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 18:24:35 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,3 +53,26 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+/*
+#include <limits.h>
+#include <stdio.h>
+
+int	main(void)
+{
+	char	*str = ft_itoa(-2134);
+
+	printf("%s\n", str);
+	str = ft_itoa(42);
+	printf("%s\n", str);
+	str = ft_itoa(707);
+	printf("%s\n", str);
+	str = ft_itoa(INT_MIN);
+	printf("%s\n", str);
+	str = ft_itoa(INT_MAX);
+	printf("%s\n", str);
+	str = ft_itoa(0);
+	printf("%s\n", str);
+	return (0);
+}
+*/

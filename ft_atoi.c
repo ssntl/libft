@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:29:13 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 16:44:12 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 18:08:09 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,3 +34,16 @@ int	ft_atoi(const char *str)
 	}
 	return (i * sign);
 }
+
+/*
+#include <stdio.h>
+
+int main() {
+	const char *test_string = "-12345"; // Test string with a negative number
+
+	int result = ft_atoi(test_string);
+	printf("String: \"%s\", Converted value: %d\n", test_string, result);
+
+    return 0;
+}
+*/

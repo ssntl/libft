@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:29:33 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 14:44:24 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 18:15:36 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,3 +16,11 @@ int	ft_isalnum(int c)
 {
 	return (ft_isalpha(c) || ft_isdigit(c));
 }
+/*
+#include <stdio.h>
+
+int main (void)
+{
+    printf("%d", ft_isalnum (97));
+}
+*/

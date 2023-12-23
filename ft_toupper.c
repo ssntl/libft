@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:47 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 16:16:34 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 18:32:09 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,12 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
+
+/*
+#include <stdio.h>
+
+int	main()
+{
+	printf("%c\n", ft_toupper(84));
+}
+*/

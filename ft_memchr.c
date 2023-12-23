@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:25:26 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 17:20:12 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 18:52:14 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,3 +52,26 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+#include <string.h>
+
+void *ft_memchr(const void *s, int c, size_t n);
+
+int main()
+{
+	const char *str = "Hello, World!";
+	int character_to_find = 'W';
+	size_t search_length = strlen(str);
+
+	void *result = ft_memchr(str, character_to_find, search_length);
+	if (result != NULL)
+	{
+		printf("Character '%c' found at position: %ld\n",
+		character_to_find, (char *)result - str);
+	}
+	else
+		printf("Character '%c' not found in the string.\n", character_to_find);
+	return (0);
+}
+*/

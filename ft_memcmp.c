@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:30:47 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 17:42:49 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 18:51:23 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,3 +45,24 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int	ft_memcmp(const void *s1, const void *s2, size_t n);
+
+int	main()
+{
+	const char *str1 = "Hello";
+	const char *str2 = "Hello";
+	size_t len = strlen(str1);
+
+	int result = ft_memcmp(str1, str2, len);
+	if (result == 0)
+		printf("Strings are identical up to length %zu\n", len);
+	else
+		printf("Strings are different\n");
+	return (0);
+}
+*/

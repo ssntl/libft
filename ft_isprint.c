@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:30:37 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 16:15:37 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 18:17:41 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,11 @@ int	ft_isprint(int c)
 	else
 		return (0);
 }
+/*
+#include <stdio.h>
+
+int main (void)
+{
+    printf("%d", ft_isprint (97));
+}
+*/
