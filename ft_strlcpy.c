@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:20 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/22 18:36:17 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 20:53:16 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,3 +69,16 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	c[] = "Tomorrow is Christmas";
+	char	d[] = " and I am sitting here coding tests.";
+	printf("%zu\n", ft_strlen(d));
+	printf("%zu\n", ft_strlcpy(c, d, 5));
+	printf("%s", c);
+	return (0);
+}
+*/

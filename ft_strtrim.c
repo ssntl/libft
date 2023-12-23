@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:22:51 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 23:25:30 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 21:07:12 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,24 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(noset, s1 + start, (end - start) + 2);
 	return (noset);
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int	main(void)
+{
+	const char	*original_str = "   Hello, World!   ";
+	const char	*trim_set = " ";
+	char		*trimmed_str = ft_strtrim(original_str, trim_set);
+
+	if (trimmed_str != NULL)
+	{
+		printf("Original String: \"%s\"\n", original_str);
+		printf("Trimmed String: \"%s\"\n", trimmed_str);
+		free(trimmed_str);
+	}
+	else
+		printf("Trimming failed.\n");
+	return (0);
+}
+*/

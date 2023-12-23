@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/21 19:23:50 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 20:25:03 by bsaager          ###   ########.fr       */
+/*   Created: 2023/12/23 21:40:42 by bsaager           #+#    #+#             */
+/*   Updated: 2023/12/23 21:40:45 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,3 +28,20 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (str);
 }
+/*
+#include <stdio.h>
+char upper(unsigned int i, char str)
+{
+	printf("running upper at index %d: %c\n", i, str);
+	return (str - 32);
+}
+
+int	main(void)
+{
+	char	*str = "hello_world";
+	printf("The result is %s\n", str);
+	char	*result = ft_strmapi(str, upper);
+	printf("The result is %s\n", result);
+	return 0;
+}
+*/

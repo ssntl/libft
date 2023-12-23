@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:36 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/23 19:22:21 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 21:13:19 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,3 +45,24 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	const char	*big_string = "This is a simple test string";
+	const char	*search_string = "test";
+	size_t		search_length = 35;
+	char		*result = ft_strnstr(big_string, search_string, search_length);
+
+	if (result != NULL)
+	{
+		printf("Original String: \"%s\"\n", big_string);
+		printf("Substring \"%s\" found at position: %ld\n",
+		 search_string, (long)(result - big_string));
+	}
+	else
+		printf("Substring \"%s\" not found in the string.\n", search_string);
+	return (0);
+}
+*/

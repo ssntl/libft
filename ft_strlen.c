@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:24 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 16:16:17 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 20:45:41 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,15 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	char	c[] = "The length of this string should be 42....";
+
+	printf("%zu", ft_strlen(c));
+	return (0);
+}
+*/
