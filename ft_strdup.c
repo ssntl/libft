@@ -1,13 +1,13 @@
 /* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/19 09:31:03 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 19:18:03 by bsaager          ###   ########.fr       */
-/*                                                                            */
+/*	*/
+/*	:::	  ::::::::   */
+/*   ft_strdup.c	:+:	  :+:	:+:   */
+/*	+:+ +:+	 +:+	 */
+/*   By: bsaager <bsaager@student.42berlin.de>	  +#+  +:+	   +#+	*/
+/*	+#+#+#+#+#+   +#+	   */
+/*   Created: 2023/12/19 09:31:03 by bsaager	   #+#	#+#	 */
+/*   Updated: 2023/12/23 22:35:56 by bsaager	  ###   ########.fr	   */
+/*	*/
 /* ************************************************************************** */
 
 /*
@@ -40,3 +40,22 @@ char	*ft_strdup(const char *s)
 	str[i] = '\0';
 	return (str);
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	const char	*input_str = "Hello, World!";
+	// Duplicate the input string using ft_strdup
+	char	*duplicate_str = ft_strdup(input_str);
+
+	if (duplicate_str != NULL) {
+		printf("Original String: \"%s\"\n", input_str);
+		printf("Duplicated String: \"%s\"\n", duplicate_str);
+		free(duplicate_str);
+	} else
+		printf("Duplication failed.\n");
+	return (0);
+}
+*/

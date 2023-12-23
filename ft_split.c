@@ -1,17 +1,17 @@
 /* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/19 09:11:09 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/23 21:41:08 by bsaager          ###   ########.fr       */
-/*                                                                            */
+/*			*/
+/*		:::	  ::::::::   */
+/*   ft_split.c		 :+:	  :+:	:+:   */
+/*			+:+ +:+		 +:+	 */
+/*   By: bsaager <bsaager@student.42berlin.de>	  +#+  +:+	   +#+		*/
+/*		+#+#+#+#+#+   +#+		   */
+/*   Created: 2023/12/19 09:11:09 by bsaager		   #+#	#+#			 */
+/*   Updated: 2023/12/23 22:23:35 by bsaager		  ###   ########.fr	   */
+/*			*/
 /* ************************************************************************** */
 
 #include "libft.h"
-// count words or substrings
+
 static size_t	count_words(char const *s, char c)
 {
 	size_t	words;
@@ -93,3 +93,40 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (word_array);
 }
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+void	print_split_words(char **split_words)
+{
+	if (split_words) {
+		while (*split_words) {
+			printf("%s\n", *split_words);
+			split_words++;
+		}
+	}
+}
+
+int main(void)
+{
+	const char	*input_str = "This is a test string";
+	char 		delimiter = ' ';
+
+	printf("Original String: \"%s\"\n", input_str);
+	char		**split_result = ft_split(input_str, delimiter);
+	if (split_result != NULL) {
+		printf("Split Result:\n");
+		print_split_words(split_result);
+		// Free memory allocated for the split result
+		char **temp = split_result;
+		while (*temp)
+		{
+			free(*temp);
+			temp++;
+		}
+		free(split_result);
+	} else
+		printf("Splitting failed.\n");
+	return (0);
+}
+*/

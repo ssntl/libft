@@ -1,13 +1,13 @@
 /* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/19 09:31:00 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/21 17:24:32 by bsaager          ###   ########.fr       */
-/*                                                                            */
+/*	*/
+/*	:::	  ::::::::   */
+/*   ft_strchr.c	:+:	  :+:	:+:   */
+/*	+:+ +:+	 +:+	 */
+/*   By: bsaager <bsaager@student.42berlin.de>	  +#+  +:+	   +#+	*/
+/*	+#+#+#+#+#+   +#+	   */
+/*   Created: 2023/12/19 09:31:00 by bsaager	   #+#	#+#	 */
+/*   Updated: 2023/12/23 22:28:02 by bsaager	  ###   ########.fr	   */
+/*	*/
 /* ************************************************************************** */
 
 /*
@@ -49,3 +49,25 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (0);
 }
+/*
+#include <stdio.h>
+
+int	main(void)
+{
+	const char	*input_str = "This is a test string";
+	int 		search_char = 't';
+
+	printf("Original String: \"%s\"\n", input_str);
+	printf("Searching for character '%c'\n", search_char);
+	// Find the character in the input string using ft_strchr
+	char *result = ft_strchr(input_str, search_char);
+	if (result != NULL)
+	{
+	printf("Character '%c' found at position: %ld\n",
+	search_char, (long)(result - input_str));
+	}
+	else
+	printf("Character '%c' not found in the string.\n", search_char);
+	return (0);
+}
+*/
