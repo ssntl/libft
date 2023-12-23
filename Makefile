@@ -6,7 +6,7 @@
 #    By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/12/21 14:44:19 by bsaager           #+#    #+#              #
-#    Updated: 2023/12/22 19:05:08 by bsaager          ###   ########.fr        #
+#    Updated: 2023/12/23 17:57:10 by bsaager          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,7 +29,6 @@ SRC = 	ft_atoi.c \
 		ft_putendl_fd.c \
 		ft_putnbr_fd.c \
 		ft_putstr_fd.c \
-		ft_putendl_fd.c \
 		ft_split.c \
 		ft_strchr.c \
 		ft_strdup.c \
@@ -49,18 +48,18 @@ SRC = 	ft_atoi.c \
 
 OBJS = $(SRC:.c=.o)
 FLAGS = -Wall -Wextra -Werror
-CC = gcc
+CC = cc
 HEADER = libft.h
 
 all: $(NAME)
 
-%.o: %.c
-	$(CC) $(FLAGS) -c $^ -o $@
-
-$(NAME):
+$(NAME): $(SRC)
 	$(CC) $(FLAGS) -c $(SRC)
 	ar rc $(NAME) $(OBJS)
 	ranlib $(NAME)
+
+%.o: %.c
+	$(CC) $(FLAGS) -c $^ -o $@
 
 clean:
 	rm -rf $(OBJS)

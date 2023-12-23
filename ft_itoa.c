@@ -6,13 +6,13 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/21 19:23:35 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/22 20:01:53 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 17:32:36 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_size(int i)
+static size_t	ft_size(int i)
 {
 	size_t	j;
 

@@ -6,7 +6,7 @@
 /*   By: bsaager <bsaager@student.42berlin.de>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/19 09:31:06 by bsaager           #+#    #+#             */
-/*   Updated: 2023/12/22 19:57:08 by bsaager          ###   ########.fr       */
+/*   Updated: 2023/12/23 17:51:35 by bsaager          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,3 +36,14 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i + j] = '\0';
 	return (str);
 }
+/* #include <stdio.h>
+int main()
+{
+	char a[] = "abcd";
+	char b[] = "efgh";
+
+	char *joined = ft_strjoin(a, b);
+	printf("%s\n", joined);
+	free(joined);
+	return (0);
+} */
